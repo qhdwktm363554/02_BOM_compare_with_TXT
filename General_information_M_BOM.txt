@@ -1,0 +1,23 @@
+1. Excel format: xls (No xlsx)
+2. Excel format: vacant --> 1st row / 1st column
+
+3. Omitted component: 만약 omit 되어 있으면 import 단계서 삭제 처리함. 
+4. Replaced string
+   '<', ''
+   '>', ''
+   '(', ''
+   ')', ''
+   FIRST_SIDE, ''
+
+5. Component format: ['000020421A000', '6594680703C','A06426,55U0300','A2155169F1700',
+                              'KR77672001','A4844730U0200','KR96080^151B','KR99002213','SKRSCT0285','A2C52004804']
+6 Name_Second_side: df.iloc[1,4]    
+   Name_First_side: df.iloc[df[df[2]==0].index[0],3]   
+
+7. Ref#는 BOM 소문자로 된 것들이 있어서 일부 ES BOM 비교 시 NG로 뜬 것이 있었다. 모두 대문자 처리.
+
+8. Ref#에서 행삭제 문자열: 'BOM', 'PCB', 'PC-Board'
+
+
+
+
